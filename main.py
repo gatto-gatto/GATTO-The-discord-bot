@@ -98,4 +98,4 @@ async def puspus(ctx):
 		await ctx.send("i duuno jk no class today sjkhsgd")
 
 if __name__ == "__main__":
-    bot.run(TOKEN)
+    client.run(TOKEN)
