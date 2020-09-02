@@ -3,10 +3,10 @@ import time
 from time import gmtime, strftime
 from discord.ext import commands
 
-bot = commands.Bot(command_prefix=".")
+client = commands.Bot(command_prefix=".")
 TOKEN = os.getenv("DISCORD_TOKEN")
 
-@bot.event
+@client.event
 async def on_ready():
     print("Logged in as {}({})".format(bot.user.name, bot.user.id))
 
