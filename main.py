@@ -1,9 +1,9 @@
 import os
-from datetime import datetime 
-import pytz 
-import time
 
-UTC = pytz.utc from discord.ext import commands
+import time
+from datetime import datetime 
+from discord.ext import commands
+import pytz 
 
 client = commands.Bot(command_prefix=".")
 TOKEN = os.getenv("DISCORD_TOKEN")
@@ -14,6 +14,7 @@ async def on_ready():
 
 @client.command()
 async def puspus(ctx):
+	UTC = pytz.utc 
 	timeZ_Kl = pytz.timezone('Asia/Kolkata') 
 	dt_Kl = datetime.now(timeZ_Kl) 
 	# finding the time aoocind to 24 hrs clock........
