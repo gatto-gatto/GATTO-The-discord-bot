@@ -8,7 +8,7 @@ TOKEN = os.getenv("DISCORD_TOKEN")
 
 @client.event
 async def on_ready():
-    print("Logged in as {}({})".format(bot.user.name, bot.user.id))
+    print("Logged in as {}({})".format(client.user.name, client.user.id))
 
 @client.command()
 async def puspus(ctx):
