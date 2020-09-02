@@ -1,1 +1,2 @@
 discord.py
+pytz==2019.3
