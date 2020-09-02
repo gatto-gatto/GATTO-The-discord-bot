@@ -22,7 +22,7 @@ async def puspus(ctx):
 	time1=int(time1)
 	#finding the day hdsiojd 
 	day=time.ctime().split()[0]
-	await ctx.send(f"{time} , {day}")
+	await ctx.send(f"{time1} , {day}")
 	if(day=='Mon'):
 		if(time1==1+12):
 			await ctx.send("AP by varun")			
