@@ -17,14 +17,8 @@ async def puspus(ctx):
 	UTC = pytz.utc 
 	timeZ_Kl = pytz.timezone('Asia/Kolkata') 
 	dt_Kl = datetime.now(timeZ_Kl) 
-	# finding the time aoocind to 24 hrs clock........
-	local= dt_Kl.strftime('%Y-%m-%d %H:%M:%S %Z %z').split()[1]
-	time1=""
-	for i in local:
-		if(i==':'):
-			break
-		time1+=i 
-	time1=int(time1)
+	# finding the time aoocind to 24 hrs clock........ local time
+	time1= int(dt_Kl.strftime('%Y-%m-%d %H:%M:%S %Z %z').split()[1].split(':')[0])
 	#finding the day hdsiojd 
 	day=time.ctime().split()[0]
 	await ctx.send(f"{time1} , {day}")
