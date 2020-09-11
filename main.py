@@ -13,15 +13,39 @@ async def on_ready():
     print("Logged in as {}({})".format(client.user.name, client.user.id))
 
 @client.command()
+async def type(ctx):
+	import random
+	while(True):
+		local=""
+		for i in range(random.randint(3,7)):
+			local+=(chr)(random.randint(97,122))
+		await ctx.send(local)			
+		entered=input()
+		if(entered=="it"):
+			await ctx.send("Game is over!")			
+			break;
+		for i in range(100):
+			await ctx.send()			
+		if(local!=entered):
+			await ctx.send(f"u entered {entered}")			
+			await ctx.send(local)			
+			await ctx.send("0")			
+	
+
+@client.command()
 async def puspus(ctx):
+	try:
+		msg = await client.wait_for('message', check=check, timeout=10)
+		print(msg)
 	UTC = pytz.utc 
 	timeZ_Kl = pytz.timezone('Asia/Kolkata') 
 	dt_Kl = datetime.now(timeZ_Kl) 
-	# finding the time aoocind to 24 hrs clock........ local time
+	finding the time aoocind to 24 hrs clock........ local time
 	time1= int(dt_Kl.strftime('%Y-%m-%d %H:%M:%S %Z %z').split()[1].split(':')[0])
-	#finding the day hdsiojd 
+	finding the day hdsiojd 
 	day=time.ctime().split()[0]
 	await ctx.send(f"{time1} , {day}")
+	print("working fine")
 	if(day=='Mon'):
 		if(time1==1+12):
 			await ctx.send("AP by varun")			
