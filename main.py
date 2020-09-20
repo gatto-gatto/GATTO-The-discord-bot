@@ -5,12 +5,27 @@ from datetime import datetime
 from discord.ext import commands
 import pytz 
 
-client = commands.Bot(command_prefix=".")
+client = commands.Bot(command_prefix="sudo ")
 TOKEN = os.getenv("DISCORD_TOKEN")
 
 @client.event
 async def on_ready():
     print("Logged in as {}({})".format(client.user.name, client.user.id))
+
+@client.command()
+async def type(ctx):
+	import random
+	while(True):
+		local=""
+		for i in range(random.randint(3,6)):
+			local+=chr(random.randint(97,122))
+		await ctx.send(local)
+		msg=await client.wait_for('message')
+		if(msg.content=="gatto"):
+			break
+		if(msg.content!=local):
+			await ctx.send("wrong")
+
 
 @client.command()
 async def puspus(ctx):
