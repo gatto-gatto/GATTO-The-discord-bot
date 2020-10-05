@@ -40,7 +40,7 @@ async def puspus(ctx):
 	if(day=='Mon'):
 		if(time1==1+12):
 			await ctx.send("AP by varun")			
-			await ctx.send("https://meet.google.com/lookup/frazjfw4w6?authuser=1&hs=179")			
+			await ctx.send("https://meet.google.com/lookup/htvdf4mslf")			
 		elif(time1==2+12):
 			await ctx.send("COA")			
 			await ctx.send("https://meet.google.com/lookup/f5kcqcas3e")
@@ -67,7 +67,7 @@ async def puspus(ctx):
 	elif(day=='Wed'):
 		if(time1==5+12):
 			await ctx.send("AP by varun")			
-			await ctx.send("https://meet.google.com/lookup/frazjfw4w6?authuser=1&hs=179")			
+			await ctx.send("https://meet.google.com/lookup/htvdf4mslf")			
 		elif(time1==1+12):
 			await ctx.send("COA")			
 			await ctx.send("https://meet.google.com/lookup/f5kcqcas3e")
@@ -86,7 +86,7 @@ async def puspus(ctx):
 		if(time1==10):
 			await ctx.send("AP's lab")			
 			# await ctx.send("teacher tatti h kuch nhi krvayeag so u can sleep")			
-			await ctx.send("https://meet.google.com/lookup/htvdf4mslf?authuser=1&hs=179")					
+			await ctx.send("https://meet.google.com/lookup/htvdf4mslf")					
 		elif(time1==1+12):
 			await ctx.send("doubt class h and ik u haven't seen the video so chill kr")
 		else:
