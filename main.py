@@ -43,7 +43,7 @@ async def puspus(ctx):
 			await ctx.send("https://meet.google.com/lookup/htvdf4mslf")			
 		elif(time1==2+12):
 			await ctx.send("COA")			
-			await ctx.send("https://meet.google.com/lookup/f5kcqcas3e")
+			await ctx.send("https://meet.google.com/bnd-gsza-oyf?pli=1&authuser=1")
 		elif(time1==3+12):
 			await ctx.send("IDBMS")
 			await ctx.send("https://meet.google.com/lookup/evx4lzq2xa?authuser=1&hs=179")
@@ -70,7 +70,7 @@ async def puspus(ctx):
 			await ctx.send("https://meet.google.com/lookup/htvdf4mslf")			
 		elif(time1==1+12):
 			await ctx.send("COA")			
-			await ctx.send("https://meet.google.com/lookup/f5kcqcas3e")
+			await ctx.send("https://meet.google.com/bnd-gsza-oyf?pli=1&authuser=1")
 		elif(time1==2+12):
 			await ctx.send("IDBMS")
 			await ctx.send("https://meet.google.com/lookup/evx4lzq2xa?authuser=1&hs=179")
@@ -97,7 +97,7 @@ async def puspus(ctx):
 			await ctx.send("https://meet.google.com/lookup/frazjfw4w6?authuser=1&hs=179")			
 		elif(time1==5+12):
 			await ctx.send("COA")			
-			await ctx.send("https://meet.google.com/lookup/f5kcqcas3e")
+			await ctx.send("https://meet.google.com/bnd-gsza-oyf?pli=1&authuser=1")
 		elif(time1==1+12):
 			await ctx.send("IDBMS")
 			await ctx.send("https://meet.google.com/lookup/evx4lzq2xa?authuser=1&hs=179")
