@@ -65,7 +65,9 @@ async def puspus(ctx):
 		else:
 			await ctx.send("mje kr be !!!!!!!!!!!!!!!!")		
 	elif(day=='Wed'):
-		if(time1==5+12):
+		if(time1==9):
+			await ctx.send("https://meet.google.com/tif-qahu-sau?authuser=0")
+		elif(time1==5+12):
 			await ctx.send("AP by varun")			
 			await ctx.send("https://meet.google.com/lookup/htvdf4mslf")			
 		elif(time1==1+12):
