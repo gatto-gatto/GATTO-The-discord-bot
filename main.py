@@ -52,7 +52,8 @@ async def puspus(ctx):
 			await ctx.send("https://meet.google.com/lookup/gcfpz2o5ch?authuser=1&hs=179")
 		elif(time1==5+12):		
 			await ctx.send("M3")
-			await ctx.send("https://meet.google.com/kcr-gneg-jwz?authuser=0&hs=179")
+			await ctx.send("https://meet.google.com/duu-uqec-tjv?authuser=0&hs=179")
+			
 		else:
 			await ctx.send("Rn koyi class koni hjdhfjahsdfjkg")
 	elif(day=='Tue'):
@@ -81,7 +82,7 @@ async def puspus(ctx):
 			await ctx.send("https://meet.google.com/lookup/gcfpz2o5ch?authuser=1&hs=179")
 		elif(time1==4+12):		
 			await ctx.send("M3")
-			await ctx.send("https://meet.google.com/kcr-gneg-jwz?authuser=0&hs=179")
+			await ctx.send("https://meet.google.com/duu-uqec-tjv?authuser=0&hs=179")
 		else:
 			await ctx.send("NO calss hsadfjhsdgah")
 	elif(day=='Thu'):
@@ -108,7 +109,7 @@ async def puspus(ctx):
 			await ctx.send("https://meet.google.com/lookup/gcfpz2o5ch?authuser=1&hs=179")
 		elif(time1==3+12):		
 			await ctx.send("M3")
-			await ctx.send("https://meet.google.com/kcr-gneg-jwz?authuser=0&hs=179")
+			await ctx.send("https://meet.google.com/duu-uqec-tjv?authuser=0&hs=179")
 		else:
 			await ctx.send("NO calss hsadfjhsdgah")
 	else:
