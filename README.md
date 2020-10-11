@@ -1,4 +1,4 @@
 # Gatto bot
-This cat will give you the meeting code:
-### command :- 
-### .puspus
+### commands :- 
+### sudo puspus
+### sudo type
