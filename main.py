@@ -5,6 +5,7 @@ from datetime import datetime
 from discord.ext import commands
 import pytz 
 
+
 client = commands.Bot(command_prefix="sudo ")
 TOKEN = os.getenv("DISCORD_TOKEN")
 
@@ -22,10 +23,32 @@ async def type(ctx):
 		await ctx.send(local)
 		msg=await client.wait_for('message')
 		if(msg.content=="gatto"):
+			await ctx.channel.purge(limit=1	)
 			break
 		if(msg.content!=local):
 			await ctx.send("wrong")
 
+
+@client.command()
+async def dying(ctx,amount=50):
+	data=[["vic2561@yahoo.com","lakimata"],[]]
+	await ctx.send("enter pass")
+	msg=await client.wait_for('message')
+	if(msg.content.split()[0]!="277353"):
+		await ctx.channel.purge(limit=3)
+	else:
+		if(msg.content.split()[1]=="n"):
+			await ctx.channel.purge(limit=3)
+			await ctx.send(data[0][0])
+			await ctx.send(data[0][1])
+		time.sleep(20)
+		await ctx.channel.purge(limit=3)
+
+@client.command()
+async def sins(ctx,amount=50):
+	while(True):
+		await ctx.channel.purge(limit=1000)
+		sleep(60*5)
 
 @client.command()
 async def puspus(ctx):
