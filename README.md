@@ -1,6 +1,6 @@
 # Gatto The discord 
 
-
+### find you gatto here
 
 [![N|Solid](https://media-exp1.licdn.com/dms/image/C560BAQFHd3L0xFcwcw/company-logo_200_200/0?e=2159024400&v=beta&t=n0t8JMKRzeZtfUr1dh_p_JqyJEuhnwPHD8LJ0p1L_Tg)](https://discord.com/oauth2/authorize?client_id=747707357257138196&permissions=8&scope=bot)
 
@@ -9,7 +9,7 @@
 ### BOT COMMANDS
 
 ```sh
-$ sudo dying
+$ sudo puspus
 $ sudo kill
 $ sudo dying 
 ```
