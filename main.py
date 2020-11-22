@@ -16,17 +16,44 @@ async def on_ready():
 @client.command()
 async def type(ctx):
 	import random
+	cnt=0  # no of mess have to remove 
 	while(True):
 		local=""
 		for i in range(random.randint(3,6)):
 			local+=chr(random.randint(97,122))
+		cnt+=2 
 		await ctx.send(local)
 		msg=await client.wait_for('message')
 		if(msg.content=="gatto"):
-			await ctx.channel.purge(limit=1	)
+			await ctx.channel.purge(limit=cnt)
 			break
 		if(msg.content!=local):
 			await ctx.send("wrong")
+			cnt+=1
+
+
+@client.command()
+async def fastfinger(ctx):
+	import random
+	cnt=0  # no of mess have to remove 
+	words=['follow','feet','has','water','earth','run','these','you','girl','me','his','just','find','men','then','add','into','what','spell','important','it','her','long','may','dont','how','food','still','want','look','quite','xd','turn','so','throug','America','talk','by','into','who','haead','so','line','night','country','sometimes','no','boy','tell','high','another','change','donw','want','day','story','are','family','here','stop','each','far','seem','lol','shhe','she','never','back','different','it','io','cazzo','only','lola','halo','close','four','be','call','tree','being','now','about']
+	while(True):
+		local=words[random.randint(0,len(words))]
+		cnt+=2 
+		await ctx.send(local)
+		msg=await client.wait_for('message')
+		if(msg.content=="gatto"):
+			await ctx.channel.purge(limit=cnt)
+			break
+		if(msg.content!=local):
+			await ctx.send("wrong")
+			cnt+=1
+
+
+	
+@client.command()
+async def chinnie(ctx):
+	await ctx.send("var message=prompt();for(var i=0;i<100;i++) {async function sleep(ms) {return new Promise(resolve => setTimeout(resolve, ms));}await sleep(10);document.getElementsByClassName('chatmsg')[0].value = message;document.getElementsByClassName('sendbtn')[0].click();}")
 
 
 @client.command()
@@ -139,4 +166,4 @@ async def puspus(ctx):
 		await ctx.send("i duuno jk no class today sjkhsgd")
 
 if __name__ == "__main__":
-    client.run(TOKEN)
+    client.run('NzQ3NzA3MzU3MjU3MTM4MTk2.X0SyvQ.ooCRlLqXCyLvs8RCuiUATy939Yc')
