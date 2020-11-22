@@ -166,4 +166,4 @@ async def puspus(ctx):
 		await ctx.send("i duuno jk no class today sjkhsgd")
 
 if __name__ == "__main__":
-    client.run('NzQ3NzA3MzU3MjU3MTM4MTk2.X0SyvQ.ooCRlLqXCyLvs8RCuiUATy939Yc')
+    client.run(TOKEN)
