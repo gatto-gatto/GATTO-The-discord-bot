@@ -76,7 +76,21 @@ async def sins(ctx,amount=50):
 	while(True):
 		await ctx.channel.purge(limit=1000)
 		sleep(60*5)
+		
+@bot.command()
+async def dm_all(ctx, *, args=None):
+    if args != None:
+        members = ctx.guild.members
+        for member in members:
+            try:
+                await member.send(args)
+                print("'" + args + "' sent to: " + member.name)
 
+            except:
+                print("Couldn't send '" + args + "' to: " + member.name)
+
+    else:
+        await ctx.channel.send("A message was not provided.")
 
 if __name__ == "__main__":
     client.run(TOKEN)
